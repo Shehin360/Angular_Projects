@@ -92,3 +92,23 @@
   margin-top: 1rem;
   color: #666;
 }
+/* .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 205, 213);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    
+    z-index: 10;
+}
+
+.nav h1 {
+    color: rgb(251, 142, 160);
+    font-size: px;
+    margin: 0;
+    padding: 2rem 0 2rem 2rem;
+    text-align: left;
+} */
