@@ -1,0 +1,46 @@
+<!-- Login form created as a template driven form -->
+<div class="container container-styles">
+	<div class="col-xs-7 offset-xs-3">
+		<div class="card card-primary">
+			<div class="card-header text-white bg-primary mb-3">Login</div>
+			<div class="card-block padding">
+				<form class="row" [formGroup]="loginForm">
+					<div class="row mb-3">
+						<label for="name" class="col-sm-3 fw-bold form-label" style="text-align:left">User Name</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" [ngClass]="{'valid':loginForm.controls.userName.valid, 'invalid':loginForm.controls.userName.invalid && !loginForm.controls.userName.pristine}" formControlName="userName" #uname>
+							<div *ngIf="loginForm.controls.password.errors && loginForm.controls.userName.dirty">
+							<div *ngIf="loginForm.controls.userName.errors?.required" style="color:red">UserName is required
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="row mb-3">
+						<label for="password" class="col-sm-3 fw-bold pl-6 form-label" style="text-align:left">Password</label>
+						<div class="col-sm-9">
+							<input type="password" class="form-control" [ngClass]="{'valid':loginForm.controls.password.valid, 'invalid':loginForm.controls.password.invalid && !loginForm.controls.password.pristine}" formControlName="password">
+							<div *ngIf="loginForm.controls.password.errors && loginForm.controls.password.dirty">
+							<div *ngIf="loginForm.controls.password.errors?.required" style="color:red">Password is required
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<div *ngIf="!valid" class="error">Invalid Credentials...Please try again...</div>
+					<br />
+
+					<div class="row">
+						<span class="col"></span>
+						<div class="col" style="margin-top:20px;margin-left: 10%;">
+							<button (click)="onSubmit()" class="btn btn-primary"
+								[disabled]="!loginForm.valid">Login</button>
+						</div>
+						<span class="col" style="margin-top:28px; margin-right: 30%;">
+							<a [routerLink]="['/welcome']" style="color:#337ab7;text-decoration: underline;">Cancel</a>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

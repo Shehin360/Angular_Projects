@@ -1,0 +1,88 @@
+thead {
+	color: #337AB7;
+}
+.display{
+	display:"";
+}
+.row{
+    margin-top:40px;
+    padding: 0 10px;
+}
+
+.clickable{
+    cursor: pointer;   
+}
+
+.head-span {
+	margin-top: -20px;
+	font-size: 15px;
+}
+
+.heading-color {
+	background-color: white;
+	color: #FF00FF;
+}
+
+.dropdown-menu.columns-3 {
+	min-width: 600px;
+}
+.dropdown-menu li a {
+	padding: 5px 15px;
+	font-weight: 300;
+}
+.multi-column-dropdown {
+	list-style: none;
+}
+
+@media (max-width: 800px) {
+	.dropdown-menu.multi-column {
+		min-width: 240px !important;
+		overflow-x: hidden;
+	}
+}
+
+.navbarpos{
+	background-color: white;
+	width:100%
+}
+
+.searchboxpos{
+	position:relative;
+	width: 25%;
+}
+
+.cartpos{
+	position:relative;
+	margin-left: 55%;
+}
+
+.carouselpos{
+	position:relative;
+	top:15px;
+	width:100%;
+}
+
+.carouselheight{
+	height:350px;
+}
+
+.noborder{
+	border:0;
+}
+
+.bgcolor{
+	background-color: white;
+}
+
+.tab-pane {
+	margin: 1%;
+}
+
+.tabpos{
+	width: 50%;
+	text-align: center;
+}
+
+.img-thumbnail {
+	padding: 0.90rem;
+}

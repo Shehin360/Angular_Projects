@@ -1,0 +1,30 @@
+.container-styles{
+	position: relative; 
+	top: 100px;
+	width:40%
+}
+
+.padding{
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+.link-underline{
+   color:#337ab7;
+    text-decoration: underline;
+}
+
+.error{
+    color: red;
+    position:relative;
+    left:95px;
+}
+
+.valid {
+	border-left: 5px solid #42A948; /* green */
+}
+
+.invalid{
+	border-left: 5px solid #a94442; /* red */
+}
+

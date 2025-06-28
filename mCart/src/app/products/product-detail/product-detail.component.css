@@ -1,0 +1,17 @@
+.tablebgcolor{
+    background-color: none;
+}
+
+.txtsize{
+    font-size: 20px;
+}
+
+.row {
+    margin-left: 15%;
+    width: 70%;
+    height: 90%;
+}
+
+.backbtnpos{
+    width: 80px;
+}

@@ -1,0 +1,35 @@
+<div class="container panelpos">
+	<div class="row">
+		<div class="col-xs-7 offset-xs-3">
+			<div class="card card-primary ">
+				<div class="card-header text-white bg-primary">{{pageTitle}}</div>
+				<div class="card-block">
+					<!-- Displays the selected product details -->
+					<table class="table table-striped tablebgcolor" *ngIf="product">
+						<tr>
+							<td class="text-center"><img [src]='product.imageUrl' [style.width.px]='imageWidth'
+									[style.margin.px]='imageMargin' class="img-thumbnail" alt="Product Image"/></td>
+
+							<td>
+								<div class="txtsize txtcolor">{{product.productName}}</div>
+								<div>by {{product.manufacturer}}</div>
+								<div>
+									<!-- Loads RatingComponent to display the rating of each product -->
+									<app-rating class="ratingcolor" [rate]='product.rating'></app-rating>
+								</div>
+								<div>Price: {{product.price}}</div>
+
+								<div>Description: {{product.description}}</div>
+							</td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div class="card-footer">
+					<a class="btn btn-secondary backbtnpos" (click)='onBack()'>
+						<em class="fa fa-chevron-left"></em> Back
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
